@@ -1,4 +1,4 @@
-const texts = ["I am a Data Scientist ", "Do you know about data science? ", "How about A.I.? "];
+const texts = ["Hello, I am a Data Scientist", "Do you know about data scientist?", "How about an A.I.?"];
 let counter = 0;
 let index = 0;
 let text = "";
@@ -32,7 +32,6 @@ function update_delta(index, text){
 	text = texts[counter];
 	letter = text.slice(0, index);
 	index += delta;
-	console.log(delta);
 	if (index <0 ){
 		document.querySelector('.typing').textContent = "";
 		document.querySelector('.input').textContent = "In ["+(counter+1)+"]:";
@@ -44,7 +43,7 @@ function update_delta(index, text){
 	document.querySelector('.input').textContent = "In ["+(counter+1)+"]:";
 	}
 	
-	if (index > text.length){
+	if (index > text.length + 1){
 		delta = update_delta(index, text);
 		index += delta;
 		sleep(1000);

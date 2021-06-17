@@ -6,35 +6,143 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rubik:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 	<title>Nanda Anzana</title>
 </head>
 <body>
-	<nav class="nav">
-		<div class='logo'>
-			<a href="#">
-			<h2>Nanda Anzana</h2>
-			<p>Data Scientist</p></a>
-		</div>
-		<div class="nav-links">
-			<ul>
-				<li><a href="#main">Home</a></li>
-				<li><a href="#">Portofolio</a></li>
-				<li><a href="#">Recommendation</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<section class="main">
-		<div class="console">
-			<h2 class="input">In [ ]:</h2>
-			<div>
-				<h2 class="box"></h2>
-				<h2 class="typing"></h2>
+	<div class="container">
+		<nav class="nav">
+			<div class='logo'>
+				<a href="#Home">
+				<h2>Nanda Anzana</h2>
+				<p>Data Scientist</p></a>
 			</div>
-		</div>
-		
-	</section>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Recommendation">Recommendation</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="Home" class="main">
+			<div class="console">
+				<h2 class="input">In [ ]:</h2>
+				<div>
+					<h2 class="box"></h2>
+					<h2 class="typing"></h2>
+				</div>
+			</div>
+			<div class="reach-link">
+				<div class="github">
+					<a href="https://github.com/NandaAnzana" target="_blank"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="linkedin">
+					<a href="https://linkedin.com/in/nanda-anzana" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<div class="resume">
+					<a href="https://drive.google.com/file/d/16oXWFuCE6gl6D2d1BhG8gbVA_I6VtHs2/view" target="_blank"><i class="fas fa-file"></i></a>
+				</div>
+			</div>
+			
+		</section>
+
+			
+
+		<section id="Portfolio" class="portfolio">
+			<div class="container-portfolio">
+				<div class="container-portfolio-title">
+					<h1>My Portfolio</h1><hr>
+				</div>
+				<div class="portfolio-pics">
+					<a href="#"><img src="./img/portfolio/iris.jpg" alt="iris-flower"></a>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="Recommendation" class="recommendation">
+			<div class="container-recommendation">
+				<div class="container-recommendation-title">
+					<h1>My Recommendation</h1><hr>
+				</div>
+				<div class="recommendation-pics">
+					<img src="./img/recommendation/Ayu.jpg" alt="Ayu" class="active">
+					<!-- <img src="./img/recommendation/Mas Fajar.jpg" alt="Mas-Fajar"> -->
+				</div>
+				<div class="recommendation-contents">
+					<div class="recommendation-text active" id="Ayu">
+						<p>"Nanda is an intelligent, humble and open minded person. He always has a way to solve problems. His great willingness to learn and critical thinking amazed me and motivated me to always  learn like him."</p>
+						<span class="description">Ayu Annisa (Digital Marketing)</span>
+					</div>
+					<!-- <div class="recommendation-text" id="Mas-Fajar">
+						<p>"He is the next."</p>
+						<span class="description">Fajar Jaman (CEO IYKRA)</span>
+					</div> -->
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="Contact" class="contact">
+			<div class="container-form">
+				<div class="contact-box">
+					<h1>Contact me</h1>
+					<p>This page using google form to send your message. I would love to respond your message and help you succeed. Feel free to get in touch with me.</p><br>
+					<p>Email <span style="padding-left: 53px;">nanda.anzana@gmail.com</span></p>
+					<p>Location <span style="padding-left: 30px;">Jakarta, Indonesia</span></p>
+					<div class="container-reach-link">
+						<div class="reach-link">
+							<div class="github">
+								<a href="https://github.com/NandaAnzana" target="_blank"><i class="fab fa-github"></i></a>
+							</div>
+							<div class="linkedin">
+								<a href="https://linkedin.com/in/nanda-anzana" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</div>
+							<div class="resume">
+								<a href="https://drive.google.com/file/d/16oXWFuCE6gl6D2d1BhG8gbVA_I6VtHs2/view" target="_blank"><i class="fas fa-file"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-contact">
+					<form class="form" target="hidden_iframe" onsubmit="submitted=true;" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSdhzfxOrudvmJTEBWyyan61fOPlpDQHVWWd1UsRQG5EYeVo1Q/formResponse?" method="POST" name="gform">
+						<div class="form-section">
+							<div class="left-form">
+								<label for="entry.1635699475">Name</label>
+								<input required autocomplete="off" type="name" name="entry.1635699475" id="entry.1635699475" placeholder="Your Name">
+								<label for="entry.1641950998">Email</label>
+								<input required autocomplete="off" type="email" name="entry.1641950998" id="entry.1641950998" placeholder="Youremail@email.com">
+							</div>
+							<div class="right-form">
+								<label for="entry.2110351607">Phone</label>
+								<input required autocomplete="off" type="tel" name="entry.2110351607" id="entry.2110351607" placeholder="Your phone number">
+								<label for="entry.1547779679">Company/Organization</label>
+								<input autocomplete="off" type="name" name="entry.1547779679" id="entry.1547779679" placeholder="Company/Organization">
+							</div>
+						</div>
+						<label for="entry.1608519492">Message</label>
+						<textarea required autocomplete="off" name="entry.1608519492" id="entry.1608519492" placeholder="Your message" rows="8" cols="50"></textarea>
+						<input type="submit" value="Submit" class="submit">
+					</form>
+				</div>
+			</div>
+			<div class="container-footer">
+				<div class="copy">
+					<p><center>Copyright © Nanda Anzana. 2020 All right reserved.</center></p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://kit.fontawesome.com/48ae90e68e.js" crossorigin="anonymous"></script>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+	<script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/submitted.js"></script>
+	<script type="text/javascript" src="./js/faded.js"></script>
+	<script type="text/javascript" src="./js/recommendation.js"></script>></script>
 	<script src="./js/typing.js"></script>
 </body>
 </html>
